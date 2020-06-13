@@ -5,8 +5,6 @@ const _port = 4000;
 
 const { Pool, Client } = require("pg");
 
-//const 
-
 const postOperation =  function(sumando01, sumando02){
   var respuesta = sumando01 + sumando02;
 
