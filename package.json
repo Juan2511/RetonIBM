@@ -14,14 +14,16 @@
     "nodemon": "^1.18.10",
     "pg": "^8.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  },
   "scripts": {
-    "test": "node test/unit_test",
+    "test": "mocha --recursive",
     "start": "node server.js",
-    "build": "node server"
+    "build": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": ""
 }
- 

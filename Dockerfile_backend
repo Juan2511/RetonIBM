@@ -8,6 +8,8 @@ RUN npm install
 
 COPY . .
 
+COPY --chown=node:node . .  
+
 HEALTHCHECK CMD curl --fail http://localhost || exit 1  
 
 CMD ["npm","start"]
