@@ -19,10 +19,7 @@ const postOperation =  function(sumando01, sumando02){
  });
 
   if (typeof respuesta !== "undefined" && respuesta!==null && !isNaN(respuesta)){
-    pool.query('INSERT INTO public."Suma"("Numero1", "Numero2", "Resultado") VALUES ('+ sumando01+','+sumando02+','+respuesta+')'/*,
-      (err, res) => {
-        pool.end();
-      }*/
+    pool.query('INSERT INTO public."Suma"("Numero1", "Numero2", "Resultado") VALUES ('+ sumando01+','+sumando02+','+respuesta+')'
     );
     return respuesta;
   }else{
